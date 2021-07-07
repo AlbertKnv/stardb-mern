@@ -1,0 +1,21 @@
+use stardb;
+
+db.dropDatabase();
+
+db.persons.insertMany([
+   { name: "Alice", gender: "female", birthYear: 1930, eyeColor: "blue", image: "Alice.png" },
+   { name: "Bob", gender: "male", birthYear: 1900, eyeColor: "red", image: "Bob.png" },
+   { name: "Charlie", gender: "male", birthYear: 1950, eyeColor: "green", image: "Charlie.png" }
+]);
+
+db.planets.insertMany([
+   { name: "Earth", population: 7000000000, rotationPeriod: 365, diameter: 7000, image: "Earth.png" },
+   { name: "Jupiter", population: 600, rotationPeriod: 1345, diameter: 15000, image: "Jupiter.png" },
+   { name: "Mars", population: 40000, rotationPeriod: 148, diameter: 12000, image: "Mars.png" }
+]);
+
+db.starships.insertMany([
+   { name: "Airbus", model: "A320", manufacturer: "Airbus", costInCredits: 10000000, length: 140, crew: "some", passengers: 10, cargoCapacity: 12, image: "Airbus.png" },
+   { name: "Boeing", model: "737MAX", manufacturer: "Boeing", costInCredits: 150000000, length: 150, crew: "another", passengers: 25, cargoCapacity: 10, image: "Boeing.png" },
+   { name: "Craic", model: "C919", manufacturer: "Craic", costInCredits: 20000000, length: 135, crew: "just one", passengers: 20, cargoCapacity: 13, image: "Craic.png" }
+]);
